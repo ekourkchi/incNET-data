@@ -1,6 +1,6 @@
 # incNET
 
-   - Basic codes to extract and organize the data.
+   - Basic codes to extract and organize the data that includes images of ~15,000 spiral galaxies taken from the SDSS DR12. To access the code to download the SDSS images please refer to [https://github.com/ekourkchi/SDSS_get](https://github.com/ekourkchi/SDSS_get).
    - Demo codes for trainig a CNN 
 
 ## Data folders
@@ -10,5 +10,5 @@ The images are stored in these folders. All images are rotated so taht the semi-
 Both of the following folders contain the ~15,000 spiral images. 
 
 
-   - 128x128
-   - 64x64
+   - 128x128: tracked via Git Large File Storage
+   - 64x64: tracked via Git Large File Storage
