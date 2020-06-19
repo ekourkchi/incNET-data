@@ -30234,3 +30234,5 @@
 64x64/pgc5807455_64x64_76.jpg filter=lfs diff=lfs merge=lfs -text
 64x64/pgc697_64x64_F.jpg filter=lfs diff=lfs merge=lfs -text
 64x64/pgc889_64x64_89.jpg filter=lfs diff=lfs merge=lfs -text
+../galaxies/ filter=lfs diff=lfs merge=lfs -text
+galaxies/ filter=lfs diff=lfs merge=lfs -text
