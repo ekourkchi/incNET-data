@@ -14,9 +14,9 @@ Both of the following folders contain the ~15,000 spiral images.
 
    - galaxie: just includes a sample of preprocessed images for the use in [GIZ](http://edd.ifa.hawaii.edu/inclination/).
    Image names are formatted as follows:
-   * `pgc####_d25x2_rot_band.png`
-   * `pgc####_d25x2_rot_gri.jpg`
-   * `pgc####_d25x2_rot_gri.sdss.jpg`
+       * `pgc####_d25x2_rot_band.png`
+       * `pgc####_d25x2_rot_gri.jpg`
+       * `pgc####_d25x2_rot_gri.sdss.jpg`
    
     "####" is the PGC ID of galaxies. 'band' is replaced with 'g', 'r', or 'i'.
         
