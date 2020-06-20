@@ -1,7 +1,7 @@
 ![GIZ_demo](https://user-images.githubusercontent.com/13570487/85185022-6c752b00-b24f-11ea-9f9a-9d1d007f4fb7.png)
 
 
-# incNET
+# incNET (data extraction)
 
    - Basic codes to extract and organize the data that includes images of more than 15,000 spiral galaxies taken from the SDSS DR12. To access the code to download the SDSS images please refer to [https://github.com/ekourkchi/SDSS_get](https://github.com/ekourkchi/SDSS_get).
    - Demo codes for trainig a CNN 
@@ -22,6 +22,8 @@ Both of the following folders contain the ~15,000 spiral images.
 
 
 ## About the Project
+
+![Screenshot from 2020-06-19 20-10-40](https://user-images.githubusercontent.com/13570487/85189112-fda4cb80-b268-11ea-83d5-172bca0fc78f.png)
 
 ### Problem: 
 The inclination of spiral galaxies plays an important role in measurements of their distances using the Tully-Fisher relationship. Each galaxy has its own unique morphology, luminosity, and surface brightness profiles. In addition, galaxy images are covered by foreground stars of the Milky Way galaxy. Therefore, it is challenging to design an algorithm that automatically determines the 3D inclination of spiral galaxies.  The inclinations of spiral galaxies can be coarsely derived from the ellipticity of apertures used for photometry, assuming that the image of a spiral galaxy is the projection of a disk with the shape of an oblate spheroid. For ~1/3 of spirals, the approximation of axial ratios provides inclination estimates good to better than 5 degrees, with degradation to ~5 degrees for another 1/3.  However in ~1/3 of cases, ellipticity-derived inclinations are problematic for a variety of reasons.  Prominent bulges can dominate the axial ratio measurement, with the Sombrero galaxy (above picture: second panel from the right) providing an extreme example.  Some galaxies may not be axially symmetric due to tidal effects.  High surface brightness bars within much lower surface brightness disks can lead to large errors.  Simply the orientation of strong spiral features with respect to the tilt axis can be confusing.  The statistical derivation of inclinations for large samples has been unsatisfactory. 
