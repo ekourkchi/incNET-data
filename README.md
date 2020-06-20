@@ -18,9 +18,9 @@
 
 ## Imaging Data Folders <a name="data_folders"></a>
 
-The images are stored in these folders. All images are rotated so that the semi-major axis of all spirals are aligned horizontally. Images are provided at the resolutions of 128x128 and 64x64 pixel^2 in the following folders. The naming convention of images follows the *pgcxxxx_NxN_yy.jpg*, where "xxxx" is the ID number of the galaxy in the Principal Galaxies Catalogue, "N" is the number of pixels along each side, and "yy" is the spatial inclination of galaxies in degree, that are measured in a manual inspection procedure via the **Galaxy Inclination Zoo** online GUI: [http://edd.ifa.hawaii.edu/inclination](http://edd.ifa.hawaii.edu/inclination/). The inclination of our sample galaxies from face-on  range between 45 and 90 degrees, where at 90 degree the disk of the spiral galaxy is totally face-on. For galaxies more face-on than are either more face-on than 45 degrees and/or are anomalous "yy" equals 0.
+The images are stored in these folders. All images are rotated so that the semi-major axis of all spirals are aligned horizontally. Images are provided at the resolutions of 128x128 and 64x64 pixel^2 in the following folders. The naming convention of images follows the *pgcxxxx_NxN_yy.jpg*, where "xxxx" is the ID number of the galaxy in the Principal Galaxies Catalogue, "N" is the number of pixels along each side, and "yy" is the spatial inclination of galaxies in degree, that are measured in a manual inspection procedure via the **Galaxy Inclination Zoo** online GUI: [http://edd.ifa.hawaii.edu/inclination](http://edd.ifa.hawaii.edu/inclination/). The inclination of our sample galaxies from face-on ranges between 45 and 90 degrees, where at 90 degrees the disk of the spiral galaxy is totally face-on. For galaxies more face-on than 45 degrees "yy" is replaced by "F" and the anomalous galaxies are denoted by setting "yy" to 0.
 
-Both of the following folders contain the ~15,000 spiral images.
+Both of the following 128x128 and 64x64 folders contain ~15,000 spiral images.
 
    - galaxie: just includes a sample of preprocessed images for the use in [GIZ](http://edd.ifa.hawaii.edu/inclination/).
    Image names are formatted as follows:
