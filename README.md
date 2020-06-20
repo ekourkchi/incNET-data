@@ -13,6 +13,15 @@ The images are stored in these folders. All images are rotated so taht the semi-
 Both of the following folders contain the ~15,000 spiral images. 
 
    - galaxie: just includes a sample of preprocessed images for the use in [GIZ](http://edd.ifa.hawaii.edu/inclination/).
+   Image names are formatted as follows:
+   `pgc####_d25x2_rot_band.png`
+   `pgc####_d25x2_rot_gri.jpg`
+   `pgc####_d25x2_rot_gri.sdss.jpg`
+   
+"####" is the PGC ID of galaxies. 'band' is replaced with 'g', 'r', or 'i'.
+    
+Files with "gri" in their names are composite colorful images. If they include 'sdss', it means that they are directly taken from the SDSS database, otherwise, they are originated from the [Pan-STARRS](https://ps1images.stsci.edu/cgi-bin/ps1cutouts) image cutout database. For many cases both versions are available.
+    
    - 128x128: tracked via Git Large File Storage
    - 64x64: tracked via Git Large File Storage
    
@@ -26,9 +35,10 @@ Both of the following folders contain the ~15,000 spiral images.
 The images of our galaxies are extracted from [SDSS DR12](https://www.sdss.org/dr12/) data collection.
 For each galaxy with available *SDSS* data, we download all the single exposure cutouts at *u, g, r, i* and *z* bands. Our data acquisition pipeline is available [here](https://github.com/ekourkchi/SDSS\_get}), which are drizzled and combined using [MONTAGE](http://montage.ipac.caltech.edu/docs/mProject.html), an astronomical application to assemble images. Our pipeline provides galaxy cutouts at all *ugriz* passbands with the spatial resolution of 0.4'' /pixel.
 
-The constructed images are in *Flexible Image Transport System* (FITS) format commonly used by astronomers. Therefore, we convert and rotate these images for the manual task of evaluating galaxy inclinations. The associated codes are stored in the `imRotate` folder. To align the semi-major axis of spirals along the horizontal axis, the primary position angles of galaxies are either taken from the [HyperLEDA](http://leda.univ-lyon1.fr/) catalog or the ourputs of our photoemtry program that are stored in `EDD_distance_cf4_v27.csv`. For the details of our photometry procedure and the codes, please refer to this repository: [https://github.com/ekourkchi/IDL_photometry](https://github.com/ekourkchi/IDL_photometry).
+The constructed images are in *Flexible Image Transport System* (FITS) format commonly used by astronomers. Therefore, we convert and rotate these images for the manual task of evaluating galaxy inclinations. The associated codes are stored in the `imRotate` folder. To align the semi-major axis of spirals along the horizontal axis, the primary position angles of galaxies are either taken from the [HyperLEDA](http://leda.univ-lyon1.fr/) catalog or the ourputs of our photoemtry program that are stored in `EDD_distance_cf4_v27.csv`. For the details of our photometry procedure and the codes, please refer to this repository: [https://github.com/ekourkchi/IDL_photometry](https://github.com/ekourkchi/IDL_photometry). The galaxy images that are used in the *GIZ* are stored in the *galaxy* folder.
 
-
+The `Data_Preparation.ipynb` and `im_scale_batch.ipynb` notebooks provide code to resize and rescale the SDSS galaxy images and storing them in the numpy `npz` format.
+Galaxt images are taken from the `galaxy` folder and reprocessed in various forms. The data augmentation has been done by flipping images vertically and horizontally. 
    
 ## About the Project
 
