@@ -1,5 +1,10 @@
 ![GIZ_demo](https://user-images.githubusercontent.com/13570487/85185022-6c752b00-b24f-11ea-9f9a-9d1d007f4fb7.png)
 
+# Other similar ML projct with similar aspects
+
+   * Cloud detection (Understanding Clouds From Satellite Images): [description and data](https://www.kaggle.com/c/understanding_cloud_organization/overview)
+   * 17 Category Flower Dataset for flower classification ([Click here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html))
+   * LAG Database, containing 11,760 fundus images corresponding to 4,878 suspecious and 6,882 negative glaucoma samples ([Click here](https://github.com/smilell/AG-CNN)). 
 
 # incNET (data extraction)
 
