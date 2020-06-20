@@ -18,9 +18,9 @@ Both of the following folders contain the ~15,000 spiral images.
    `pgc####_d25x2_rot_gri.jpg`
    `pgc####_d25x2_rot_gri.sdss.jpg`
    
-"####" is the PGC ID of galaxies. 'band' is replaced with 'g', 'r', or 'i'.
-    
-Files with "gri" in their names are composite colorful images. If they include 'sdss', it means that they are directly taken from the SDSS database, otherwise, they are originated from the [Pan-STARRS](https://ps1images.stsci.edu/cgi-bin/ps1cutouts) image cutout database. For many cases both versions are available.
+    "####" is the PGC ID of galaxies. 'band' is replaced with 'g', 'r', or 'i'.
+        
+    Files with "gri" in their names are composite colorful images. If they include 'sdss', it means that they are directly taken from the SDSS database, otherwise, they are originated from the [Pan-STARRS](https://ps1images.stsci.edu/cgi-bin/ps1cutouts) image cutout database. For many cases both versions are available.
     
    - 128x128: tracked via Git Large File Storage
    - 64x64: tracked via Git Large File Storage
