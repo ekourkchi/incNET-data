@@ -98,7 +98,7 @@ This model is now available to test on any arbitrary spiral galaxy. Please follo
 
 On the left side of this tool, users have different options to find and load a galaxy image. The PGC-based query relies on the information provided by the [HyperLEDA](http://leda.univ-lyon1.fr/) catalog. Each image is rotated and resized based on the LEDA entries for *logd25* and position angle, which are reasonable in most cases. Further manual alignment features are provided. Clicking on the orange button, users can *Evaluate* the inclination. This step feeds the image to a pre-trained neural network and outputs the inclination value. In addition, there is another network that parallelly predicts the rejection probability of the galaxy by human users. For computational matters, the resolution of the arbitrary square images are degraded to 64x64 pixels prior to the evaluation process.
 
-# Other similar ML projct with similar aspects <a name="otherML"></a>
+# Other ML projct with similar aspects <a name="otherML"></a>
 
    * Cloud detection (Understanding Clouds From Satellite Images): [description and data](https://www.kaggle.com/c/understanding_cloud_organization/overview)
    * 17 Category Flower Dataset for flower classification ([Click here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html))
