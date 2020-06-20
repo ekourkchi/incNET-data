@@ -18,9 +18,18 @@ Both of the following folders contain the ~15,000 spiral images.
    
 ## Tabular Data:
 
-   - `EDD_distance_cf4_v27.csv`: The list of studied galaxy candiates for the Cosmicflows program. [Click here](http://edd.ifa.hawaii.edu/describe_columns.php?table=kcf4cand) for the description of the columns. In our inclination program, the applicable columns are *inc*, *inc_e*, *inc_flag*, *inc_n* and *Note_inc* that holds the notes entered by the [GIZ](http://edd.ifa.hawaii.edu/inclination/) users.
+   - [EDD_distance_cf4_v27.csv](https://raw.githubusercontent.com/ekourkchi/incNET-data/master/EDD_distance_cf4_v27.csv): The list of studied galaxy candiates for the Cosmicflows program. [Click here](http://edd.ifa.hawaii.edu/describe_columns.php?table=kcf4cand) for the description of the columns. In our inclination program, the applicable columns are *inc*, *inc_e*, *inc_flag*, *inc_n* and *Note_inc* that holds the notes entered by the [GIZ](http://edd.ifa.hawaii.edu/inclination/) users.
 
 
+## Data Preparation
+
+The images of our galaxies are extracted from [SDSS DR12](https://www.sdss.org/dr12/) data collection.
+For each galaxy with available *SDSS* data, we download all the single exposure cutouts at *u, g, r, i* and *z* bands. Our data acquisition pipeline is available [here](https://github.com/ekourkchi/SDSS\_get}), which are drizzled and combined using [MONTAGE](http://montage.ipac.caltech.edu/docs/mProject.html), an astronomical application to assemble images. Our pipeline provides galaxy cutouts at all *ugriz* passbands with the spatial resolution of 0.4'' /pixel.
+
+The constructed images are in *Flexible Image Transport System* (FITS) format commonly used by astronomers. Therefore, we convert and rotate these images for the manual task of evaluating galaxy inclinations. The associated codes are stored in the `imRotate` folder. To align the semi-major axis of spirals along the horizontal axis, the primary position angles of galaxies are either taken from the [HyperLEDA](http://leda.univ-lyon1.fr/) catalog or the ourputs of our photoemtry program that are stored in `EDD_distance_cf4_v27.csv`. For the details of our photometry procedure and the codes, please refer to this repository: [https://github.com/ekourkchi/IDL_photometry](https://github.com/ekourkchi/IDL_photometry).
+
+
+   
 ## About the Project
 
 ![Screenshot from 2020-06-19 20-10-40](https://user-images.githubusercontent.com/13570487/85189112-fda4cb80-b268-11ea-83d5-172bca0fc78f.png)
