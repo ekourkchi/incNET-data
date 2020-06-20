@@ -103,6 +103,8 @@ On the left side of this tool, users have different options to find and load a g
    * Cloud detection (Understanding Clouds From Satellite Images): [description and data](https://www.kaggle.com/c/understanding_cloud_organization/overview)
    * 17 Category Flower Dataset for flower classification ([Click here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html))
    * LAG Database, containing 11,760 fundus images corresponding to 4,878 suspecious and 6,882 negative glaucoma samples ([Click here](https://github.com/smilell/AG-CNN)). 
+   * Skin Cancer: Malignant vs Benign, a balanced [dataset](https://www.kaggle.com/fanconic/skin-cancer-malignant-vs-benign) of images of benign skin moles and malignant skin moles
+
 
 
 
