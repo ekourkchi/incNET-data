@@ -1,17 +1,8 @@
 ![GIZ_demo](https://user-images.githubusercontent.com/13570487/85185022-6c752b00-b24f-11ea-9f9a-9d1d007f4fb7.png)
 
-# Other similar ML projct with similar aspects
+## Table of contents <a name="data_folders"></a>
 
-   * Cloud detection (Understanding Clouds From Satellite Images): [description and data](https://www.kaggle.com/c/understanding_cloud_organization/overview)
-   * 17 Category Flower Dataset for flower classification ([Click here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html))
-   * LAG Database, containing 11,760 fundus images corresponding to 4,878 suspecious and 6,882 negative glaucoma samples ([Click here](https://github.com/smilell/AG-CNN)). 
-
-# incNET (data extraction)
-
-   - Basic codes to extract and organize the data that includes images of more than 15,000 spiral galaxies taken from the SDSS DR12. To access the code to download the SDSS images please refer to [https://github.com/ekourkchi/SDSS_get](https://github.com/ekourkchi/SDSS_get).
-   - Demo codes for training a CNN
-   
-## Table of contents
+- [incNET (data extraction)](#incNET)
    * [Imaging Data Folders](#data_folders)
    * [Tabular Data](#tabular_data)
    * [Data Preparation](#data_prep)
@@ -19,7 +10,15 @@
       * [Problem](#problem)
       * [Goal](#goal)
       * [Inclination Labels](#labels)
-      * [Demo Version](#demo)      
+      * [Demo Version](#demo)  
+- [Other similar ML projct with similar aspects](#otherML)
+
+# incNET (data extraction) <a name="incNET"></a>
+
+   - Basic codes to extract and organize the data that includes images of more than 15,000 spiral galaxies taken from the SDSS DR12. To access the code to download the SDSS images please refer to [https://github.com/ekourkchi/SDSS_get](https://github.com/ekourkchi/SDSS_get).
+   - Demo codes for training a CNN
+   
+    
 
 ## Imaging Data Folders <a name="data_folders"></a>
 
@@ -99,6 +98,11 @@ This model is now available to test on any arbitrary spiral galaxy. Please follo
 
 On the left side of this tool, users have different options to find and load a galaxy image. The PGC-based query relies on the information provided by the [HyperLEDA](http://leda.univ-lyon1.fr/) catalog. Each image is rotated and resized based on the LEDA entries for *logd25* and position angle, which are reasonable in most cases. Further manual alignment features are provided. Clicking on the orange button, users can *Evaluate* the inclination. This step feeds the image to a pre-trained neural network and outputs the inclination value. In addition, there is another network that parallelly predicts the rejection probability of the galaxy by human users. For computational matters, the resolution of the arbitrary square images are degraded to 64x64 pixels prior to the evaluation process.
 
+# Other similar ML projct with similar aspects <a name="otherML"></a>
+
+   * Cloud detection (Understanding Clouds From Satellite Images): [description and data](https://www.kaggle.com/c/understanding_cloud_organization/overview)
+   * 17 Category Flower Dataset for flower classification ([Click here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html))
+   * LAG Database, containing 11,760 fundus images corresponding to 4,878 suspecious and 6,882 negative glaucoma samples ([Click here](https://github.com/smilell/AG-CNN)). 
 
 
 
