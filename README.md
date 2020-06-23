@@ -12,6 +12,7 @@
       * [Inclination Labels](#labels)
       * [Demo Version](#demo)  
 - [Other similar ML projct with similar aspects](#otherML)
+- [Disclaimer](#Disclaimer)
 
 # incNET (data extraction) <a name="incNET"></a>
 
@@ -105,6 +106,11 @@ On the left side of this tool, users have different options to find and load a g
    * LAG Database, containing 11,760 fundus images corresponding to 4,878 suspecious and 6,882 negative glaucoma samples ([Click here](https://github.com/smilell/AG-CNN)). 
    * Skin Cancer: Malignant vs Benign, a balanced [dataset](https://www.kaggle.com/fanconic/skin-cancer-malignant-vs-benign) of images of benign skin moles and malignant skin moles
 
+
+## Disclaimer <a name="Disclaimer"></a>
+
+ * All rights reserved. The material may not be used, reproduced or distributed, in whole or in part, without the prior agreement. 
+ * Contact: *Ehsan Kourkchi* <ekourkchi@gmail.com>
 
 
 
