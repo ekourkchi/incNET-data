@@ -30236,3 +30236,5 @@
 64x64/pgc889_64x64_89.jpg filter=lfs diff=lfs merge=lfs -text
 ../galaxies/ filter=lfs diff=lfs merge=lfs -text
 galaxies/ filter=lfs diff=lfs merge=lfs -text
+data_64x64.npz filter=lfs diff=lfs merge=lfs -text
+data_128x128.npz filter=lfs diff=lfs merge=lfs -text
