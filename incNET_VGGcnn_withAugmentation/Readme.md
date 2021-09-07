@@ -29,6 +29,8 @@ This model is the most complex model in our study. It has ~2,500,000 free parame
 
 ## Model6
 
+This model is comparable to Model4, in terms of complexity, although the number of convolutional units is larger in this model.
+
 ![image](https://user-images.githubusercontent.com/13570487/132305223-fd946618-d7aa-40da-b21b-096345804366.png)
 
 
