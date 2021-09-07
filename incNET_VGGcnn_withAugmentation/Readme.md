@@ -52,6 +52,8 @@ Models have different complexity levels and labeled as `model4`, `model5` and `m
 
 ## Comparing the results of various models
 
+Refer to [this notebook](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/model_evaluations_plots.ipynb) for further details.
+
 Plotting prediction-measurement vs. measurements. In the following figure, the horizontal axis shows the measured inclinations. Each point represents a galaxy in the test sample. 
 
 In almost all cases the prediction bias is at minimum and not that significant. Each panel displays the results of a model, and is labeled with the name of the corresponding model.  
@@ -114,8 +116,15 @@ This model is comparable to Model4, in terms of complexity, although the number 
 
 
 
+# Evaluation of the binary classification models
 
+Refer to [this notebook](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/model_evaluations_plots.ipynb) for further details.
 
+- Evidently, model #5 has a better overall performance compared to the other two models, which does not come as surprise knowing that model #5 is the most complicated one.
+
+- Averaging out the evaluated labels does make some improvements, however model #5 seems to perform slightly better than the average.
+
+![image](https://user-images.githubusercontent.com/13570487/132331083-961596a8-99a0-442e-bd57-7cda7bbcae6c.png)
 
 
 
