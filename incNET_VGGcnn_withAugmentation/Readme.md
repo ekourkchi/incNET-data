@@ -1,5 +1,20 @@
 # Training a CNN model based on VGG
 
+![model4](https://user-images.githubusercontent.com/13570487/132303628-6657d08f-7ae3-4fe9-a96d-335569b5b150.png)
+
+## Relevant Notebooks:
+
+### Data Preparation/Augmentation
+
+To prepare data for the full analysis, we increase the resolution of the input images to 128x128. Each images can be rotated arbitrarily, with some additional noise and other tweaks.
+
+**Note** that the aspect ratio of images should not be changed to preserve the elliptical shape of the projected galaxies, and thus their inclinations.
+
+- `incNET_model_augmentation.ipynb` [Click Here](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/incNET_model_augmentation.ipynb)
+- `incNET_model_augmentation-binary.ipynb` [Click Here](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/incNET_model_augmentation-binary.ipynb)
+
+## Objectives
+
 Our main objectives are to evaluate the inclination of a spiral galaxy from its images, whether it is presented in grayscale or colorful formats.
 Moreover, we need to know what is the possibility of the rejection of the given image by a human user. Images are rejected in cases they have poor quality or contain 
 bright objects that influence the process of measuring the inclination of the target galaxy. Very face-on galaxies are also rejected.
@@ -11,27 +26,51 @@ We tackle the problem from two different angles.
 
 Models have different complexity levels and labeled as `model4`, `model5` and `model6`, with `model4` being the simplest one. 
 
-## Model4
+
+## Training the CNN models
+
+- `128x128_Trainer_04.ipynb` [Click Here](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_04.ipynb) 
+    - In this notebook, we train a VGG model using the augmented data. Data augmentation has been done separately in [another code](https://github.com/ekourkchi/incNET-data/blob/master/incNET_dataPrep/Data_Preparation_gri.ipynb) and the output data has been stored on disk for the purpose of the following analysis. See also [here](https://github.com/ekourkchi/incNET-data/blob/master/incNET_dataPrep/Data_Preparation_RGB.ipynb).
+
+    - 128x128 images are used for this analysis, which are in grayscale (g,r,i filter) or colorful (RGB). All images are presented in 3 channels. For grayscale images, all three channels are the same.
+
+    - Inclinations range from 45 to 90 degrees.
+
+- `128x128_Trainer_04-binary.ipynb` [Click Here](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_04-binary.ipynb)
+
+    - In this notebook, we train a VGG model using the augmented data. Data augmentation has been done separately in another code and the output data has been stored on disk for the purpose of the following analysis.
+
+    - 128x128 images are used for this analysis, which are in grayscale (g,r,i filter) or colorful (RGB). All images are presented in 3 channels. For grayscale images, all three channels are the same.
+
+    - Labels are either 0 or 1.
+
+        - 0: galaxy images with well defined and measured inclinations, that are used for the distance analysis in a separate research
+        - 1: galaxies that are flagged to be either face-on (inclinations less than 45 degrees from face-on), or to have poor image quality. Deformed galaxies, non-spiral galaxies, confused images, multiple galaxies in a field, galaxy images that are contaminated with bright foreground stars have been also flagged and have label 1.
+
+    - We adopt the same network trained to determine inclinations. Here for binary classification, the last layer activation functions has been changed to Softmax with sparse categorical entropy as the loss function.
+
+
+
+### Model4
 
 This is the simplest model in our series of models. The total number of weight number of this model is ~1.600,000. It has two sets of double convolutional layers.
 
-![image](https://user-images.githubusercontent.com/13570487/132303628-6657d08f-7ae3-4fe9-a96d-335569b5b150.png)
 
-![image](https://user-images.githubusercontent.com/13570487/132303705-b84cea19-a492-4832-9cd4-57bd9535599b.png)
+![model4_table](https://user-images.githubusercontent.com/13570487/132303705-b84cea19-a492-4832-9cd4-57bd9535599b.png)
 
 
-## Model5
+### Model5
 
 This model is the most complex model in our study. It has ~2,500,000 free parameters and three sets of double convolutional layers.
 
-![image](https://user-images.githubusercontent.com/13570487/132303862-d7901455-d591-45c5-9616-beaa6cb54eb4.png)
+![model5_table](https://user-images.githubusercontent.com/13570487/132303862-d7901455-d591-45c5-9616-beaa6cb54eb4.png)
 
 
-## Model6
+### Model6
 
 This model is comparable to Model4, in terms of complexity, although the number of convolutional units is larger in this model.
 
-![image](https://user-images.githubusercontent.com/13570487/132305223-fd946618-d7aa-40da-b21b-096345804366.png)
+![model6_table](https://user-images.githubusercontent.com/13570487/132305223-fd946618-d7aa-40da-b21b-096345804366.png)
 
 
 
