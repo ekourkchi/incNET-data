@@ -1,4 +1,4 @@
-#Training a CNN model based on VGG
+## Training a CNN model based on VGG
 
 Our main objectives are to evaluate the inlcination of a spiral galaxy from its images, whether it is presented in graysclae or colorful formats.
 Moreover, we need to know what is the possibility of the rejection of the given image by a human user. Images are rejected in cases they have poor quality or contain 
