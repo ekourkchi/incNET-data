@@ -50,6 +50,46 @@ Models have different complexity levels and labeled as `model4`, `model5` and `m
     - We adopt the same network trained to determine inclinations. Here for binary classification, the last layer activation functions has been changed to Softmax with sparse categorical entropy as the loss function.
 
 
+## Comparing the results of various models
+
+Plotting prediction-measurement vs. measurements. In the following figure, the horizontal axis shows the measured inclinations. Each point represents a galaxy in the test sample. 
+
+In almost all cases the prediction bias is at minimum and not that significant. Each panel displays the results of a model, and is labeled with the name of the corresponding model.  
+
+At first glance, Model #5 has the best performance, which does not come as surprise since it is the most complicated model that we considered. In general, the difference in the performance of the model is not that significant. 
+
+![image](https://user-images.githubusercontent.com/13570487/132320948-a4d2dd02-b81f-4ca9-9565-5dc06b021c8d.png)
+
+
+## Average models
+
+We take two average types to combine the results of various models and possibly obtain better results
+
+- median
+- mean
+
+We generate 4 sets of averages
+
+- averaging the results of all model4 flavors
+- averaging the results of all model5 flavors
+- averaging the results of all model6 flavors
+- averaging the results of all models with various flavors
+
+We don't see any significant differences between `mean` and `median`, so there is not way we prefer one of them. However, we recommend using the median just to ignore very severe outliers.
+
+### The power of bagging
+
+Clearly, when the results of all models are averaged out, we get the best performance. RMS and MAE of deviations of the all models average from the measured values are 3.09 and 2.12 [deg], respectively.
+
+![image](https://user-images.githubusercontent.com/13570487/132321203-7362280a-8213-4cd8-80a5-efa53188e2e3.png)
+
+![image](https://user-images.githubusercontent.com/13570487/132321248-75d78df5-0bda-48b8-b75e-884851007a59.png)
+
+
+
+## Models
+
+Here, we brielfy introduce different models that we consider in this study.
 
 ### Model4
 
