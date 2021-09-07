@@ -47,7 +47,13 @@ Models have different complexity levels and labeled as `model4`, `model5` and `m
         - 0: galaxy images with well defined and measured inclinations, that are used for the distance analysis in a separate research
         - 1: galaxies that are flagged to be either face-on (inclinations less than 45 degrees from face-on), or to have poor image quality. Deformed galaxies, non-spiral galaxies, confused images, multiple galaxies in a field, galaxy images that are contaminated with bright foreground stars have been also flagged and have label 1.
 
-    - We adopt the same network trained to determine inclinations. Here for binary classification, the last layer activation functions has been changed to Softmax with sparse categorical entropy as the loss function.
+    - We adopt the same network structure we used to determine inclinations. Here for binary classification, the activation functions of the last layer has been changed to `Softmax` with sparse categorical entropy as the loss function.
+
+- Other similar notebooks to train similar models are as follows. All comments are similar to those in [128x128_Trainer_04.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_04.ipynb) and [128x128_Trainer_04-binary.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_04-binary.ipynb).
+    - [128x128_Trainer_05.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_05.ipynb)
+    - [128x128_Trainer_06.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_06.ipynb)
+    - [128x128_Trainer_05-binary.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_05-binary.ipynb)
+    - [128x128_Trainer_06-binary.ipynb](https://github.com/ekourkchi/incNET-data/blob/master/incNET_VGGcnn_withAugmentation/128x128_Trainer_06-binary.ipynb)
 
 
 ## Comparing the results of various models
