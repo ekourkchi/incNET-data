@@ -28,7 +28,6 @@ We deploy our inclination processing model on a private server at the University
 **Example:**
 
 
-        ```
         $ curl https://cropnet.eng.hawaii.edu/inclinet/objname/M31
         {
         "status": failed/success,
@@ -42,6 +41,5 @@ We deploy our inclination processing model on a private server at the University
             # percentage
         }
         }
-        ```
    
 
