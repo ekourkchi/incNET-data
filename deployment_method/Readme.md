@@ -28,21 +28,20 @@ We deploy our inclination processing model on a private server at the University
 **Example:**
 
 
-
-'''
-$ curl https://cropnet.eng.hawaii.edu/inclinet/objname/M31
-{
-  "status": failed/success,
-  "galaxy": {
-    # galaxy information
-  },
-  "inclinations": {
-    # galaxy inclination in degree
-  },
-  "rejection_likelihood": {
-    # percentage
-  }
-}
-'''
+        ```
+        $ curl https://cropnet.eng.hawaii.edu/inclinet/objname/M31
+        {
+        "status": failed/success,
+        "galaxy": {
+            # galaxy information
+        },
+        "inclinations": {
+            # galaxy inclination in degree
+        },
+        "rejection_likelihood": {
+            # percentage
+        }
+        }
+        ```
    
 
