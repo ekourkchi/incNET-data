@@ -1,6 +1,8 @@
-# Deployment Methods
+# Deployment Strategy
+
+## Platform
  
-We deploy our inclination processing model on a private server at the University of Hawaii. The application would be open to the astronomers and anyone interested.
+We deploy our inclination processing model on a private server at the University of Hawaii under the [Extragalacti Distance Database](https://edd.ifa.hawaii.edu/). The application would be open to the professional/mateur astronomers and anyone passionated about the sky and galaxies.
  
 ## How to access the application
 
@@ -13,11 +15,34 @@ We deploy our inclination processing model on a private server at the University
    3. Uploading a galaxy image from the local computer of the user.
        - User is given the opportunity of uploading a galaxy image and evaluate it by our model(s)
 
+### Demo Version
 
-       
+- Currently a [DEMO](http://edd.ifa.hawaii.edu/incNET/) version of the website interface is up and running. For the final deployment, we do not change the GUI that much, we just adapt it to the requirements of deployed applications. 
+- The backend of this version, works based on a convolutional neural network that inputs 64x64 galaxy images, with the semi-major of galaxy aligned horizontally. 
+
+
 
 ### API
 - We provide a REST API that can be called from terminal or other applications that enable the REST API calls. The input and output data would be in JSON format.
 
+**Example:**
+
+
+
+'''
+$ curl https://cropnet.eng.hawaii.edu/inclinet/objname/M31
+{
+  "status": failed/success,
+  "galaxy": {
+    # galaxy information
+  },
+  "inclinations": {
+    # galaxy inclination in degree
+  },
+  "rejection_likelihood": {
+    # percentage
+  }
+}
+'''
    
 
